@@ -1,0 +1,7 @@
+---
+- name: Update the MOTD on hosts
+  hosts: all
+  become: true
+
+  roles:
+    - ansible.motd
